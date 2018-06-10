@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>PINK</title>
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body class="inner-page form-page">
+	<header class="page-header">
+		<nav class="main-nav page-header__nav">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<a href="" class="page-logo main-nav__logo"></a>
+			<div class="main-nav_wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">Фотографии</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">Конкурс</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="competition page-heading">
+			<h1 class="competition__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+		</section>
+	</header>
+	<div class="page-main form-main">
+		<section class="form">
+			<h2 class="visually-hidden">Регистрация в конкурсе</h2>
+			<p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+			<form action="form__registration registration">
+				<p class="registration__input">
+					<label class="registration__label" for="second-name">Фамилия:</label>
+					<input type="text" id="second-name" name="user-second-name" placeholder="Укажите фамилию *">
+				</p>
+				<p class="registration__input">
+					<label class="registration__label" for="first-name">Имя:</label>
+					<input type="text" id="first-name" name="user-first-name" placeholder="Укажите ваше имя *">
+				</p>
+				<p class="registration__input">
+					<label class="registration__label" for="patronymic-name">Отчество:</label>
+					<input type="text" id="patronymic-name" name="user-patronymic-name" placeholder="Ну и отчество тоже">
+				</p>
+				<fieldset class="registration__application application">
+					<legend class="registration__label application__label">С каким приложением путешествовали?</legend>
+					<ul class="application__list">
+						<li class="application__item">
+							<input type="radio" name="application-group" value="ios" class="application__radio visually-hidden" id="pink-for-ios" checked>
+							<label for="pink-for-ios" class="application__label">Pink для iOS</label>
+							<span class="application__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="application__item">
+							<input type="radio" name="application-group" value="android" class="application__radio visually-hidden" id="pink-for-android">
+							<label for="pink-for-android" class="application__label">Pink на Android</label>
+							<span class="application__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="application__item">
+							<input type="radio" name="application-group" value="windows-phone" class="application__radio visually-hidden" id="pink-for-windows-phone">
+							<label for="pink-for-windows-phone" class="application__label">Windows Phone</label>
+							<span class="application__span filter-checkbox-indicator"></span>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="registration__user-contacts user-contacts">
+					<legend class="registration__label user-contacts__label">Контактная информация</legend>
+					<p class="registration__input user-contacts__input">
+						<input type="text" id="second-name" name="user-second-name" placeholder="Номер, пожалуйста">
+						<label class="registration__label" for="second-name">Номер телефона</label>
+					</p>
+					<p class="registration__input user-contacts__input">
+						<input type="text" id="second-name" name="user-second-name" placeholder="Введите почту">
+						<label class="registration__label" for="second-name">Адрес почты</label>
+					</p>
+				</fieldset>
+				<fieldset class="registration__achievements achievements">
+					<legend class="registration__label achievements__label">Ваши безбашенные достижения в путешествии</legend>
+					<ul class="achievements__list">
+						<li class="achievements__item">
+							<input type="checkbox" name="selfie-with-shark" class="achievements__radio visually-hidden" id="selfie" checked>
+							<label for="selfie" class="achievements__label">Сделал селфи с акулой</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="achievements__item">
+							<input type="checkbox" name="saw-chuck-norris" class="achievements__radio visually-hidden" id="chuck-norris">
+							<label for="chuck-norris" class="achievements__label">Видел Чака Норриса</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="achievements__item">
+							<input type="checkbox" name="kept-the-tower" class="achievements__radio visually-hidden" id="tower" checked>
+							<label for="tower" class="achievements__label">Удержал башню</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="achievements__item">
+							<input type="checkbox" name="burnt-on-the-beach" class="achievements__radio visually-hidden" id="beach" checked>
+							<label for="beach" class="achievements__label">Обгорел на пляже</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="achievements__item">
+							<input type="checkbox" name="bought-souvenirs" class="achievements__radio visually-hidden" id="souvenirs">
+							<label for="souvenirs" class="achievements__label">Накупил сувениров</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+						<li class="achievements__item">
+							<input type="checkbox" name="defeated-the-hotel" class="achievements__radio visually-hidden" id="hotel">
+							<label for="hotel" class="achievements__label">Разгромил отель</label>
+							<span class="achievements__span filter-checkbox-indicator"></span>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="registration__emotions emotions">
+					<legend class="registration__label emotions __label">Опишите свои эмоции</legend>
+					<p class="registration__textarea emotions__textarea">
+						<textarea name="user-emotions-textarea" id="emotions-textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					</p>
+				</fieldset>
+				<button class="registration__submit button" type="submit">Отправить форму</button>
+				<i class="registration__requared"><b>*</b> — обязательные для заполнения поля</i>
+			</form>
+		</section>
+	</div>
+	<footer class="page-footer">
+		<a href="" class="page-logo page-footer__logo"></a>
+		<ul class="page-footer__social social">
+			<li class="social__item">
+				<a href="#" class="social__link">Twitter</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link">Facebook</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link">Youtube</a>
+			</li>
+		</ul>
+		<div class="page-footer__copyright copyright">
+			<p class="copyright__name">Разработано HTML Academy</p>
+		</div>
+	</footer>
+	<secttion class="modal failure-form">
+		<h2 class="modal__heading failure-form__heading">Что-то пошло не так</h2>
+		<p class="modal__text failure-form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+		<button class="button modal__button failure-form__button" type="button">Ок</button>
+	</secttion>
+		<secttion class="modal succes-form">
+		<h2 class="modal__heading succes-form__heading">Ваша заявка отправлена</h2>
+		<p class="modal__text succes-form__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+		<div class="modal__wrapper">
+			<button class="button modal__button succes-form__button">Закрыть окно</button>
+		</div>
+	</secttion>
+</body>
+</html>
